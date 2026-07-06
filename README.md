@@ -28,7 +28,6 @@ app.js
 manifest.webmanifest
 sw.js
 assets/icon.svg
-.nojekyll
 ```
 
 ## Lokaal openen
@@ -94,4 +93,5 @@ Voor productie is het verstandig om nog echte PNG app-icons toe te voegen, minim
 - Geen backend/Supabase toegevoegd.
 - Geen echte affiliate-trackingcodes toegevoegd.
 - Geen betaalde API's toegevoegd.
+- Geen build-stap nodig voor deze MVP.
 - Focus op snelle eerste MVP die later kan doorgroeien.
