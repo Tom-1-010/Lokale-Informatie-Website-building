@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f766e" />
+    <meta name="description" content="VakantieKompas helpt je vakantielanden vergelijken met praktische tips, hotels, uitjes en routes. Start met Nederland als voorbeeldland." />
+
+    <title>VakantieKompas — vakantielanden, hotels en uitjes</title>
+
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="VakantieKompas" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <meta property="og:title" content="VakantieKompas" />
+    <meta property="og:description" content="Ontdek vakantielanden met hotels, uitjes, routes en praktische tips." />
+    <meta property="og:type" content="website" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "VakantieKompas",
+        "description": "Website voor vakantielanden, hotels, uitjes en praktische reistips.",
+        "areaServed": "Europe"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Direct naar inhoud</a>
+
+    <header class="site-header">
+      <nav class="topbar" aria-label="Hoofdnavigatie">
+        <a class="brand" href="#top" aria-label="VakantieKompas startpagina">
+          <span class="brand-mark">VK</span>
+          <span>
+            <strong>VakantieKompas</strong>
+            <small>landen • hotels • uitjes</small>
+          </span>
+        </a>
+        <div class="nav-links" aria-label="Secties">
+          <a href="#landen">Landen</a>
+          <a href="#hotels">Hotels</a>
+          <a href="#uitjes">Uitjes</a>
+          <a href="#route">Route</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Nieuwe reisweb-app</p>
+          <h1>Ontdek vakantielanden alsof je al onderweg bent.</h1>
+          <p class="hero-text">Vergelijk landen, bekijk beste reistijd, ontdek hotels, plan uitjes en bewaar praktische tips. Deze MVP start met Nederland als voorbeeldland.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#landen">Bekijk Nederland</a>
+            <a class="button button-secondary" href="#affiliate">Affiliate-opzet</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Hoogtepunten Nederland">
+          <div class="weather-pill">Voorbeeldland</div>
+          <h2>Nederland</h2>
+          <p>Steden, kust, natuur, musea, pretparken en weekendtrips in één overzicht.</p>
+          <div class="mini-grid">
+            <span>Beste reistijd<br /><strong>apr–sep</strong></span>
+            <span>Ideaal voor<br /><strong>citytrips</strong></span>
+            <span>Budget<br /><strong>€€–€€€</strong></span>
+            <span>Reisduur<br /><strong>2–10 dagen</strong></span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="search-panel" aria-label="Zoeken en filteren">
+        <label for="countrySearch">Zoek vakantieland of thema</label>
+        <div class="search-row">
+          <input id="countrySearch" type="search" placeholder="Bijvoorbeeld: Nederland, strand, musea, familie" autocomplete="off" />
+          <button class="button button-dark" type="button" id="clearSearch">Reset</button>
+        </div>
+      </section>
+
+      <section class="section" id="landen">
+        <div class="section-heading">
+          <p class="eyebrow">Vakantielanden</p>
+          <h2>Kies je bestemming</h2>
+          <p>De structuur is klaar om later landen zoals Spanje, Italië, Frankrijk, Griekenland en Turkije toe te voegen.</p>
+        </div>
+        <div class="country-layout">
+          <div class="country-list" id="countryList" aria-label="Landenlijst"></div>
+          <article class="country-detail" id="countryDetail" aria-live="polite"></article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="hotels">
+        <div>
+          <p class="eyebrow">Affiliate-ready</p>
+          <h2>Hotels en verblijven</h2>
+          <p>Kaarten zijn voorbereid voor hotelpartners. Zet later echte affiliate-URL's achter de knoppen en gebruik tracking per land, regio of thema.</p>
+        </div>
+        <div class="cards" id="hotelCards"></div>
+      </section>
+
+      <section class="section" id="uitjes">
+        <div class="section-heading">
+          <p class="eyebrow">Uitjes en tickets</p>
+          <h2>Wat kun je doen?</h2>
+          <p>Gebruik deze blokken later voor ticketpartners, tours, attracties en lokale deals.</p>
+        </div>
+        <div class="activity-grid" id="activityGrid"></div>
+      </section>
+
+      <section class="section itinerary" id="route">
+        <div class="section-heading">
+          <p class="eyebrow">Voorbeeldroute</p>
+          <h2>Plan een korte vakantie</h2>
+          <p>Een routeblok verhoogt de kans dat bezoekers doorklikken naar hotels, tickets en vervoerspartners.</p>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section class="section practical" id="praktisch">
+        <div class="section-heading">
+          <p class="eyebrow">Praktisch</p>
+          <h2>Snel weten voordat je boekt</h2>
+        </div>
+        <div class="practical-grid" id="practicalGrid"></div>
+      </section>
+
+      <section class="affiliate-notice" id="affiliate">
+        <div>
+          <p class="eyebrow">Transparantie</p>
+          <h2>Affiliate-links eerlijk inzetten</h2>
+          <p>Deze website kan commissie ontvangen wanneer bezoekers via links boeken. Maak dit zichtbaar bij commerciële blokken en plaats later een aparte affiliate- en privacyverklaring.</p>
+        </div>
+        <a class="button button-primary" href="#hotels">Bekijk commerciële blokken</a>
+      </section>
+    </main>
+
+    <nav class="mobile-nav" aria-label="Mobiele navigatie">
+      <a href="#landen">Landen</a>
+      <a href="#hotels">Hotels</a>
+      <a href="#uitjes">Uitjes</a>
+      <a href="#route">Route</a>
+    </nav>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> VakantieKompas. MVP voor vakantielanden.</p>
+      <p>Affiliate-links zijn placeholders totdat echte partnerlinks zijn toegevoegd.</p>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
