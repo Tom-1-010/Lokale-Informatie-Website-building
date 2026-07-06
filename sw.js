@@ -1,4 +1,4 @@
-const CACHE_NAME = "vakantiekompas-v1";
+const CACHE_NAME = "slaapuniek-v1";
 const STATIC_ASSETS = [
   "./",
   "./index.html",
