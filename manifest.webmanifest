@@ -2,7 +2,7 @@
   "name": "VakantieKompas — vakantielanden, hotels en uitjes",
   "short_name": "VakantieKompas",
   "description": "Ontdek vakantielanden met hotels, uitjes, routes en praktische reistips.",
-  "id": "/",
+  "id": "./",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
