@@ -1,23 +1,42 @@
-# VakantieKompas
+# SlaapUniek
 
-Een moderne website/web-app voor vakantielanden, gebouwd als lichte PWA met Nederland als eerste voorbeeldland.
+Een moderne website/web-app voor bijzondere overnachtingsplekken in Nederland.
 
-## Doel
+## Nieuwe richting
 
-VakantieKompas helpt bezoekers snel een vakantieland te kiezen en daarna door te klikken naar relevante affiliate-aanbiedingen, zoals hotels, uitjes, routes en praktische reistips.
+SlaapUniek is geen website over vakantielanden meer. Het concept is om unieke slaapplekken in Nederland te verzamelen en te verkopen via sterke visuals, AI-content en TikTok-advertenties.
+
+Voorbeelden van plekken:
+
+- boomhutten
+- tiny houses
+- woonboten
+- yurts
+- kaslofts
+- molenhuisjes
+- wellnessplekken met hottub of sauna
+
+## Positionering
+
+Bestaande partijen zoals Natuurhuisje zijn sterk in natuurhuisjes en rust. SlaapUniek focust scherper op plekken met een duidelijke wow-factor die goed werken in short-form video.
+
+Kernbelofte:
+
+> Boek geen hotel. Boek een verhaal.
 
 ## Eerste versie
 
-Deze eerste versie bevat:
+Deze MVP bevat:
 
-- Nederland als voorbeeldland
-- Moderne responsive UI
-- iOS-vriendelijke web-app basis
-- PWA manifest
-- Service worker met eenvoudige offline cache
-- Affiliate-blokken voor hotels, uitjes en routes
-- Duidelijke affiliate-transparantie
-- Schaalbare datastructuur voor extra landen
+- nieuwe branding: SlaapUniek
+- Nederland als enige markt
+- fictieve voorbeeldplekken
+- zoekfunctie op plek, regio en vibe
+- detailpaneel per overnachtingsplek
+- wow-factor per plek
+- AI/TikTok-advertentiehooks per geselecteerde plek
+- MVP-roadmap richting affiliate, leads en later boekingen
+- PWA-basis voor iOS/web-app gebruik
 
 ## Bestanden
 
@@ -44,54 +63,41 @@ Open daarna:
 http://localhost:5173
 ```
 
-## Nieuwe landen toevoegen
+## Nieuwe plekken toevoegen
 
-Voeg nieuwe landen toe in `app.js` in de `COUNTRIES` array. Gebruik dezelfde structuur als het Nederland-object.
+Voeg nieuwe plekken toe in `app.js` in de `STAYS` array. Gebruik dezelfde structuur als de bestaande voorbeeldplekken.
 
 Belangrijke velden:
 
 - `slug`
-- `name`
-- `tagline`
+- `title`
+- `type`
+- `region`
+- `price`
+- `audience`
+- `vibe`
+- `tags`
 - `summary`
-- `heroFacts`
-- `highlights`
-- `hotelDeals`
-- `activities`
-- `itinerary`
-- `practical`
+- `wow`
+- `whyTikTok`
+- `cta`
+- `url`
 
-## Affiliate-links
+## Verdienmodel later
 
-De huidige knoppen gebruiken placeholder-links (`#`). Vervang deze later door echte trackinglinks van bijvoorbeeld:
+Begin realistisch met een affiliate- of leadmodel:
 
-- Booking.com Partner Programme
-- GetYourGuide Affiliate Partner Program
-- Tiqets Partner Program
-- ANWB of reisverzekeringspartners
-- Lokale hotelketens of vakantieparken
-
-Zorg dat affiliate-content altijd herkenbaar blijft voor bezoekers.
-
-## iOS web-app aandachtspunten
-
-De site bevat:
-
-- `apple-mobile-web-app-capable`
-- `apple-mobile-web-app-title`
-- `theme-color`
-- veilige spacing met `env(safe-area-inset-*)`
-- grote touch targets
-- sticky mobiele navigatie
-- manifest voor installatie als web-app
-
-Voor productie is het verstandig om nog echte PNG app-icons toe te voegen, minimaal 180x180, 192x192 en 512x512.
+1. Curated pagina's met doorverwijzingen naar bestaande aanbieders.
+2. TikTok/Meta ads testen per categorie.
+3. Winnaars omzetten naar SEO-landingspagina's.
+4. Verhuurders laten betalen per lead, plaatsing of commissie.
+5. Pas later directe boekingen, accounts en beschikbaarheidskalender bouwen.
 
 ## Bewuste keuzes
 
 - Geen zware dependency-stack toegevoegd.
 - Geen backend/Supabase toegevoegd.
 - Geen echte affiliate-trackingcodes toegevoegd.
-- Geen betaalde API's toegevoegd.
+- Geen echte verhuurderformulieren of betalingen toegevoegd.
 - Geen build-stap nodig voor deze MVP.
-- Focus op snelle eerste MVP die later kan doorgroeien.
+- Focus op een snelle, testbare landingspagina die later kan doorgroeien.
