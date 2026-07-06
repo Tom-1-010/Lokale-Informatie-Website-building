@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">VakantieKompas icoon</title>
+  <desc id="desc">Groen app-icoon met VK letters en kompasvorm.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" x2="432" y1="64" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f766e" />
+      <stop offset="1" stop-color="#14b8a6" />
+    </linearGradient>
+    <linearGradient id="sun" x1="330" x2="430" y1="82" y2="182" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fbbf24" />
+      <stop offset="1" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <circle cx="382" cy="132" r="54" fill="url(#sun)" opacity="0.96" />
+  <path d="M88 354c46-58 91-87 135-87 53 0 85 42 132 42 29 0 52-13 69-38v101H88v-18Z" fill="#ecfeff" opacity="0.92" />
+  <path d="M91 375h330" stroke="#ffffff" stroke-width="20" stroke-linecap="round" opacity="0.92" />
+  <path d="M145 150h49l45 126 45-126h49l-70 182h-50L145 150Zm198 0h44v78l66-78h53l-73 84 78 98h-56l-68-86v86h-44V150Z" fill="#ffffff" />
+  <path d="M78 78l58 24-36 17-17 36-24-58 19-19Z" fill="#ffffff" opacity="0.9" />
+</svg>
