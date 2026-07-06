@@ -1,119 +1,142 @@
-const COUNTRIES = [
+const STAYS = [
   {
-    slug: "nederland",
-    name: "Nederland",
-    label: "Citytrips, kust en natuur dicht bij huis",
-    tagline: "Compact vakantieland met veel afwisseling: Amsterdam, Rotterdam, Waddeneilanden, Zeeland, Veluwe, musea en attracties.",
+    slug: "boomhut-veluwe",
+    title: "Boomhut boven de Veluwe",
+    type: "Boomhut",
+    region: "Gelderland",
+    price: "vanaf €189 p.n.",
+    audience: "stellen en avontuurlijke weekendtrips",
+    vibe: "romantisch, natuur, houtkachel",
+    tags: ["boomhut", "Veluwe", "romantisch", "hond welkom"],
     summary:
-      "Nederland is sterk voor korte vakanties, gezinsweekenden en citytrips. De afstanden zijn klein, het openbaar vervoer is goed geregeld en bijna elke regio heeft een mix van cultuur, natuur en horeca.",
-    heroFacts: ["Beste reistijd: april t/m september", "Ideaal: 2 tot 10 dagen", "Type: steden, kust, natuur", "Budget: gemiddeld tot hoog"],
-    themes: ["citytrip", "familie", "strand", "musea", "natuur", "fietsroute"],
-    highlights: [
-      {
-        title: "Amsterdam en musea",
-        text: "Sterk voor cultuur, grachten, foodhallen, winkels en bekende musea. Goede hotelmarkt, maar prijzen liggen vaak hoger."
-      },
-      {
-        title: "Kust en eilanden",
-        text: "Zeeland, Scheveningen, Texel en de Waddeneilanden zijn geschikt voor strand, wandelen, fietsen en familievakanties."
-      },
-      {
-        title: "Natuur en rust",
-        text: "De Veluwe, Utrechtse Heuvelrug en Limburg zijn logisch voor natuurhuisjes, wellnesshotels en actieve weekenden."
-      }
-    ],
-    hotelDeals: [
-      {
-        title: "Boutique hotel in Amsterdam",
-        region: "Noord-Holland",
-        price: "vanaf €129",
-        text: "Voor citytrips met musea, horeca en grachten op loopafstand.",
-        cta: "Bekijk hotels",
-        url: "#"
-      },
-      {
-        title: "Strandhotel aan de kust",
-        region: "Zeeland / Zuid-Holland",
-        price: "vanaf €99",
-        text: "Voor weekendjes weg met strand, boulevard, duinen en familiekamers.",
-        cta: "Bekijk kustdeals",
-        url: "#"
-      },
-      {
-        title: "Natuurhotel op de Veluwe",
-        region: "Gelderland",
-        price: "vanaf €89",
-        text: "Voor wandelen, fietsen, wellness en korte autoroutes door de natuur.",
-        cta: "Bekijk verblijven",
-        url: "#"
-      }
-    ],
-    activities: [
-      {
-        title: "Rondvaart door de grachten",
-        text: "Laagdrempelige activiteit voor eerste keer Amsterdam en goed geschikt voor ticketpartners.",
-        cta: "Tickets bekijken",
-        url: "#"
-      },
-      {
-        title: "Keukenhof en tulpenregio",
-        text: "Seizoensgebonden trekker rond Lisse, sterk voor lentecontent en dagtrips.",
-        cta: "Dagtrips bekijken",
-        url: "#"
-      },
-      {
-        title: "Efteling of pretparkweekend",
-        text: "Interessant voor gezinnen, hotelarrangementen en tickets in één funnel.",
-        cta: "Familie-uitjes",
-        url: "#"
-      },
-      {
-        title: "Fietsroute door natuurgebied",
-        text: "Past bij binnenlandse vakanties, natuurhuisjes en verhuurpartners.",
-        cta: "Routes bekijken",
-        url: "#"
-      }
-    ],
-    itinerary: [
-      {
-        day: "Dag 1",
-        title: "Aankomst en stadswandeling",
-        text: "Start in Amsterdam, Utrecht of Rotterdam. Kies een centraal hotel en plan één duidelijke hoofdactiviteit."
-      },
-      {
-        day: "Dag 2",
-        title: "Museum, rondvaart of foodtour",
-        text: "Combineer een betaalde activiteit met vrije tijd. Dit is het beste moment voor ticket-affiliates."
-      },
-      {
-        day: "Dag 3",
-        title: "Natuur of kust",
-        text: "Rijd of reis door naar strand, Veluwe of een kleinere stad. Voeg hotel- en routepartners toe."
-      }
-    ],
-    practical: [
-      {
-        title: "Vervoer",
-        text: "Trein en auto werken allebei goed. Parkeren in grote steden is duur; P+R is vaak slimmer."
-      },
-      {
-        title: "Weer",
-        text: "Reken op wisselvallig weer. Voor buitenactiviteiten is een regenalternatief verstandig."
-      },
-      {
-        title: "Kosten",
-        text: "Hotels in Amsterdam, kustplaatsen en schoolvakanties zijn meestal het duurst."
-      },
-      {
-        title: "Boekmoment",
-        text: "Voor populaire weekenden en vakanties loont vroeg boeken; last-minute werkt beter buiten het hoogseizoen."
-      }
-    ]
+      "Een verhoogde houten suite tussen de bomen, met ochtendmist, een houtkachel en ontbijtmand aan een touw. Ideaal voor een weekend dat anders voelt dan een hotelnacht.",
+    wow: "Ontbijt wordt via een katrol omhoog gehaald naar het terras.",
+    whyTikTok: "Sterke eerste 3 seconden: deur open, uitzicht tussen bomen, ontbijtmand omhoog, close-up van houtkachel.",
+    cta: "Bekijk boomhutten",
+    url: "#"
+  },
+  {
+    slug: "tiny-house-duinen",
+    title: "Tiny house achter de duinen",
+    type: "Tiny house",
+    region: "Zeeland",
+    price: "vanaf €149 p.n.",
+    audience: "strandliefhebbers en jonge stellen",
+    vibe: "strand, compact, design",
+    tags: ["tiny house", "duinen", "strand", "design"],
+    summary:
+      "Een minimalistisch tiny house op fietsafstand van zee. Klein van formaat, maar groot in beleving: buitendouche, vuurplaats en een ochtendwandeling naar het strand.",
+    wow: "Binnen 7 minuten fiets je van je bed naar de eerste strandopgang.",
+    whyTikTok: "Voor/na-contrast: drukke stad uit, tiny house in, blote voeten in het zand.",
+    cta: "Bekijk tiny houses",
+    url: "#"
+  },
+  {
+    slug: "woonboot-friesland",
+    title: "Woonboot met eigen zwemtrap",
+    type: "Woonboot",
+    region: "Friesland",
+    price: "vanaf €169 p.n.",
+    audience: "rustzoekers en waterliefhebbers",
+    vibe: "water, zonsopkomst, kano",
+    tags: ["woonboot", "Friesland", "water", "kano"],
+    summary:
+      "Wakker worden op het water, koffie op het dek en direct zwemmen vanaf je eigen trap. Perfect voor mensen die rust zoeken maar niet in een standaard huisje willen zitten.",
+    wow: "Je stapt letterlijk vanuit je slaapkamer het water op.",
+    whyTikTok: "Drone-achtige hook: water, boot, koffie op dek en sprong vanaf de zwemtrap.",
+    cta: "Bekijk woonboten",
+    url: "#"
+  },
+  {
+    slug: "yurt-drenthe",
+    title: "Yurt onder de sterren",
+    type: "Yurt",
+    region: "Drenthe",
+    price: "vanaf €119 p.n.",
+    audience: "families en slow-travel gasten",
+    vibe: "glamping, sterrenhemel, kampvuur",
+    tags: ["yurt", "Drenthe", "glamping", "kampvuur"],
+    summary:
+      "Een ronde yurt met houtkachel, warme dekens en een vuurplaats buiten. Het voelt avontuurlijk, maar blijft comfortabel genoeg voor een eerste glampingervaring.",
+    wow: "Door het ronde dakraam kijk je vanuit bed naar de sterren.",
+    whyTikTok: "Magisch nachtbeeld: vuur, sterren, dampende mok thee en dakraam-shot vanuit bed.",
+    cta: "Bekijk glampingplekken",
+    url: "#"
+  },
+  {
+    slug: "kasloft-utrecht",
+    title: "Kasloft tussen het groen",
+    type: "Kasloft",
+    region: "Utrecht",
+    price: "vanaf €159 p.n.",
+    audience: "designliefhebbers en workation-gasten",
+    vibe: "licht, planten, design, workation",
+    tags: ["kas", "loft", "Utrecht", "workation"],
+    summary:
+      "Een lichte loft in een oude kas, omringd door planten en glas. Geschikt voor een rustige workation, romantisch nachtje weg of visuele content met veel daglicht.",
+    wow: "Je slaapt in een groene kas met hotelcomfort en ochtendzon van alle kanten.",
+    whyTikTok: "Sterke transitie: laptop dicht, kasdeur open, bed tussen planten en ontbijt in ochtendlicht.",
+    cta: "Bekijk designplekken",
+    url: "#"
+  },
+  {
+    slug: "wellness-molen",
+    title: "Molenhuisje met hottub",
+    type: "Molenhuisje",
+    region: "Noord-Holland",
+    price: "vanaf €219 p.n.",
+    audience: "luxe weekendjes en cadeaubonnen",
+    vibe: "wellness, historie, hottub",
+    tags: ["molen", "hottub", "wellness", "luxe"],
+    summary:
+      "Een historisch molenhuisje met moderne badkamer, privé-hottub en uitzicht op polderlandschap. Vooral sterk als cadeau of romantische verrassing.",
+    wow: "Privé-hottub naast een oude molen, met uitzicht over de polder.",
+    whyTikTok: "Visuele hook: dampende hottub, molenwieken, badjas-shot en zonsondergang.",
+    cta: "Bekijk wellnessplekken",
+    url: "#"
+  }
+];
+
+const CONCEPT_CARDS = [
+  {
+    title: "Curated in plaats van alles",
+    text: "Alleen plekken met duidelijke wow-factor: uitzicht, vorm, verhaal, hot tub, design, natuur of bijzonder object."
+  },
+  {
+    title: "Gemaakt voor social video",
+    text: "Elke kaart heeft een TikTok-hoek. Dat maakt ad-creatie sneller en goedkoper met AI-scripts en beelden."
+  },
+  {
+    title: "Affiliate eerst, platform later",
+    text: "Start met doorverwijzen naar partners. Voeg directe aanvragen, verhuurdersdashboard en betalingen pas toe na bewezen tractie."
+  }
+];
+
+const ROADMAP = [
+  {
+    step: "Stap 1",
+    title: "Curated collectie",
+    text: "Handmatig 50 tot 100 unieke plekken verzamelen met affiliate- of aanvraaglinks. Focus op sterke visuals en duidelijke doelgroepen."
+  },
+  {
+    step: "Stap 2",
+    title: "AI-contentmachine",
+    text: "Per plek automatisch hooks, captions, voice-over scripts, landingspagina's en advertentievarianten maken."
+  },
+  {
+    step: "Stap 3",
+    title: "TikTok-validatie",
+    text: "Goedkope ads testen per categorie: boomhutten, wellness, tiny houses, woonboten en glamping. Winnaars krijgen aparte SEO-pagina's."
+  },
+  {
+    step: "Stap 4",
+    title: "Leadmodel voor verhuurders",
+    text: "Verhuurders betalen per lead, per plaatsing of via commissie. Pas daarna boekingskalender en directe betaling bouwen."
   }
 ];
 
 const state = {
-  selectedCountry: COUNTRIES[0],
+  selectedStay: STAYS[0],
   query: ""
 };
 
@@ -123,129 +146,145 @@ function normalize(value) {
   return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
-function countryMatches(country, query) {
+function stayMatches(stay, query) {
   if (!query) return true;
   const haystack = normalize([
-    country.name,
-    country.label,
-    country.tagline,
-    country.summary,
-    country.themes.join(" "),
-    country.highlights.map((item) => `${item.title} ${item.text}`).join(" ")
+    stay.title,
+    stay.type,
+    stay.region,
+    stay.audience,
+    stay.vibe,
+    stay.summary,
+    stay.wow,
+    stay.tags.join(" ")
   ].join(" "));
   return haystack.includes(normalize(query));
 }
 
-function renderCountryList() {
-  const list = byId("countryList");
-  const countries = COUNTRIES.filter((country) => countryMatches(country, state.query));
+function getFilteredStays() {
+  return STAYS.filter((stay) => stayMatches(stay, state.query));
+}
 
-  if (!countries.length) {
-    list.innerHTML = '<div class="empty-state">Geen land gevonden. Probeer bijvoorbeeld "strand", "musea" of "Nederland".</div>';
+function renderStayList() {
+  const list = byId("stayList");
+  const stays = getFilteredStays();
+
+  if (!stays.length) {
+    list.innerHTML = '<div class="empty-state">Geen plek gevonden. Probeer bijvoorbeeld "boomhut", "sauna", "water" of "Veluwe".</div>';
     return;
   }
 
-  if (!countries.some((country) => country.slug === state.selectedCountry.slug)) {
-    state.selectedCountry = countries[0];
+  if (!stays.some((stay) => stay.slug === state.selectedStay.slug)) {
+    state.selectedStay = stays[0];
   }
 
-  list.innerHTML = countries
+  list.innerHTML = stays
     .map(
-      (country) => `
-        <button class="country-button ${country.slug === state.selectedCountry.slug ? "active" : ""}" type="button" data-country="${country.slug}">
-          <strong>${country.name}</strong>
-          <small>${country.label}</small>
+      (stay) => `
+        <button class="stay-button ${stay.slug === state.selectedStay.slug ? "active" : ""}" type="button" data-stay="${stay.slug}">
+          <span>${stay.type}</span>
+          <strong>${stay.title}</strong>
+          <small>${stay.region} · ${stay.price}</small>
         </button>
       `
     )
     .join("");
 
-  list.querySelectorAll("[data-country]").forEach((button) => {
+  list.querySelectorAll("[data-stay]").forEach((button) => {
     button.addEventListener("click", () => {
-      const nextCountry = COUNTRIES.find((country) => country.slug === button.dataset.country);
-      if (!nextCountry) return;
-      state.selectedCountry = nextCountry;
+      const nextStay = STAYS.find((stay) => stay.slug === button.dataset.stay);
+      if (!nextStay) return;
+      state.selectedStay = nextStay;
       renderAll();
     });
   });
 }
 
-function renderCountryDetail() {
-  const country = state.selectedCountry;
-  byId("countryDetail").innerHTML = `
-    <div class="country-detail-header">
+function renderStayDetail() {
+  const stay = state.selectedStay;
+  byId("stayDetail").innerHTML = `
+    <div class="stay-detail-header">
       <div>
-        <p class="eyebrow">Voorbeeldland</p>
-        <h3>${country.name}</h3>
-        <p>${country.summary}</p>
+        <p class="eyebrow">${stay.type} · ${stay.region}</p>
+        <h3>${stay.title}</h3>
+        <p>${stay.summary}</p>
       </div>
-      <ul class="fact-list" aria-label="Snelle feiten">
-        ${country.heroFacts.map((fact) => `<li>${fact}</li>`).join("")}
-      </ul>
+      <div class="price-bubble">
+        <span>Richtprijs</span>
+        <strong>${stay.price}</strong>
+      </div>
     </div>
 
-    <ul class="tags" aria-label="Thema's">
-      ${country.themes.map((theme) => `<li class="tag">${theme}</li>`).join("")}
+    <div class="wow-box">
+      <span>Wow-factor</span>
+      <strong>${stay.wow}</strong>
+    </div>
+
+    <ul class="tags" aria-label="Tags">
+      ${stay.tags.map((tag) => `<li class="tag">${tag}</li>`).join("")}
     </ul>
 
-    <div class="highlight-grid">
-      ${country.highlights
-        .map(
-          (item) => `
-            <div class="highlight">
-              <strong>${item.title}</strong>
-              <p>${item.text}</p>
-            </div>
-          `
-        )
-        .join("")}
+    <div class="detail-grid">
+      <div class="detail-card">
+        <strong>Voor wie?</strong>
+        <p>${stay.audience}</p>
+      </div>
+      <div class="detail-card">
+        <strong>Vibe</strong>
+        <p>${stay.vibe}</p>
+      </div>
+      <div class="detail-card">
+        <strong>Waarom geschikt voor TikTok?</strong>
+        <p>${stay.whyTikTok}</p>
+      </div>
     </div>
+
+    <a class="button button-primary" href="${stay.url}" aria-label="${stay.cta}: ${stay.title}">${stay.cta}</a>
   `;
 }
 
-function renderHotels() {
-  const country = state.selectedCountry;
-  byId("hotelCards").innerHTML = country.hotelDeals
+function renderConceptCards() {
+  byId("conceptCards").innerHTML = CONCEPT_CARDS
     .map(
-      (deal) => `
+      (card) => `
         <article class="card">
-          <div class="card-topline">
-            <span class="badge">Affiliate plek</span>
-            <span class="price">${deal.price}</span>
-          </div>
-          <strong>${deal.title}</strong>
-          <p>${deal.region}</p>
-          <p>${deal.text}</p>
-          <a class="button button-primary" href="${deal.url}" aria-label="${deal.cta}: ${deal.title}">${deal.cta}</a>
+          <span class="badge">Strategie</span>
+          <strong>${card.title}</strong>
+          <p>${card.text}</p>
         </article>
       `
     )
     .join("");
 }
 
-function renderActivities() {
-  const country = state.selectedCountry;
-  byId("activityGrid").innerHTML = country.activities
+function renderAdGrid() {
+  const stay = state.selectedStay;
+  const hooks = [
+    `Je gelooft niet dat je in Nederland zo kunt slapen: ${stay.title.toLowerCase()}.`,
+    `POV: je boekt geen hotel, maar een ${stay.type.toLowerCase()} in ${stay.region}.`,
+    `Deze plek heeft één detail waardoor mensen blijven kijken: ${stay.wow.toLowerCase()}`,
+    `AI-videohoek: ${stay.whyTikTok}`
+  ];
+
+  byId("adGrid").innerHTML = hooks
     .map(
-      (activity) => `
-        <article class="activity-card">
-          <span class="badge">Uitje</span>
-          <strong>${activity.title}</strong>
-          <p>${activity.text}</p>
-          <a class="button button-secondary" href="${activity.url}" aria-label="${activity.cta}: ${activity.title}">${activity.cta}</a>
+      (hook, index) => `
+        <article class="ad-card">
+          <span>Hook ${index + 1}</span>
+          <strong>${hook}</strong>
+          <p>Gebruik dit als basis voor TikTok, Reels, Shorts of een AI-video prompt.</p>
         </article>
       `
     )
     .join("");
 }
 
-function renderItinerary() {
-  const country = state.selectedCountry;
-  byId("timeline").innerHTML = country.itinerary
+function renderRoadmap() {
+  byId("timeline").innerHTML = ROADMAP
     .map(
       (item) => `
         <article class="timeline-item">
-          <div class="timeline-day">${item.day}</div>
+          <div class="timeline-step">${item.step}</div>
           <div>
             <h3>${item.title}</h3>
             <p>${item.text}</p>
@@ -256,31 +295,16 @@ function renderItinerary() {
     .join("");
 }
 
-function renderPractical() {
-  const country = state.selectedCountry;
-  byId("practicalGrid").innerHTML = country.practical
-    .map(
-      (item) => `
-        <article class="practical-card">
-          <strong>${item.title}</strong>
-          <p>${item.text}</p>
-        </article>
-      `
-    )
-    .join("");
-}
-
 function renderAll() {
-  renderCountryList();
-  renderCountryDetail();
-  renderHotels();
-  renderActivities();
-  renderItinerary();
-  renderPractical();
+  renderStayList();
+  renderStayDetail();
+  renderConceptCards();
+  renderAdGrid();
+  renderRoadmap();
 }
 
 function initSearch() {
-  const input = byId("countrySearch");
+  const input = byId("staySearch");
   const clearButton = byId("clearSearch");
 
   input.addEventListener("input", (event) => {
@@ -291,7 +315,7 @@ function initSearch() {
   clearButton.addEventListener("click", () => {
     input.value = "";
     state.query = "";
-    state.selectedCountry = COUNTRIES[0];
+    state.selectedStay = STAYS[0];
     renderAll();
     input.focus();
   });
