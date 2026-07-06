@@ -1,20 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">VakantieKompas icoon</title>
-  <desc id="desc">Groen app-icoon met VK letters en kompasvorm.</desc>
+  <title id="title">SlaapUniek icoon</title>
+  <desc id="desc">Donkergroen app-icoon met een huisje, maan en SU letters.</desc>
   <defs>
     <linearGradient id="bg" x1="80" x2="432" y1="64" y2="448" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0f766e" />
-      <stop offset="1" stop-color="#14b8a6" />
+      <stop stop-color="#26391f" />
+      <stop offset="1" stop-color="#526c43" />
     </linearGradient>
-    <linearGradient id="sun" x1="330" x2="430" y1="82" y2="182" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#fbbf24" />
-      <stop offset="1" stop-color="#f59e0b" />
+    <linearGradient id="warm" x1="150" x2="380" y1="120" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f7c891" />
+      <stop offset="1" stop-color="#c8793a" />
     </linearGradient>
   </defs>
   <rect width="512" height="512" rx="112" fill="url(#bg)" />
-  <circle cx="382" cy="132" r="54" fill="url(#sun)" opacity="0.96" />
-  <path d="M88 354c46-58 91-87 135-87 53 0 85 42 132 42 29 0 52-13 69-38v101H88v-18Z" fill="#ecfeff" opacity="0.92" />
-  <path d="M91 375h330" stroke="#ffffff" stroke-width="20" stroke-linecap="round" opacity="0.92" />
-  <path d="M145 150h49l45 126 45-126h49l-70 182h-50L145 150Zm198 0h44v78l66-78h53l-73 84 78 98h-56l-68-86v86h-44V150Z" fill="#ffffff" />
-  <path d="M78 78l58 24-36 17-17 36-24-58 19-19Z" fill="#ffffff" opacity="0.9" />
+  <circle cx="372" cy="126" r="52" fill="#f8e2ba" opacity="0.96" />
+  <path d="M100 348c36-55 82-82 138-82 48 0 86 25 116 25 31 0 54-16 68-48v129H100v-24Z" fill="#eaf1e4" opacity="0.9" />
+  <path d="M139 258 256 160l117 98v118H139V258Z" fill="url(#warm)" />
+  <path d="M119 263 256 147l137 116" fill="none" stroke="#fffdf8" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="219" y="286" width="74" height="90" rx="12" fill="#26391f" opacity="0.88" />
+  <path d="M132 418h248" stroke="#fffdf8" stroke-width="20" stroke-linecap="round" opacity="0.92" />
+  <path d="M105 111c18 19 40 28 66 28-25 11-46 30-60 57-2-33-14-59-36-79 10 0 20-2 30-6Z" fill="#fffdf8" opacity="0.9" />
+  <path d="M151 132h44l37 104 37-104h44l-58 151h-46l-58-151Zm177 0h42v67l55-67h50l-63 73 68 78h-52l-58-70v70h-42V132Z" fill="#fffdf8" />
 </svg>
