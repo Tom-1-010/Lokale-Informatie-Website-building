@@ -1,15 +1,15 @@
 {
-  "name": "VakantieKompas — vakantielanden, hotels en uitjes",
-  "short_name": "VakantieKompas",
-  "description": "Ontdek vakantielanden met hotels, uitjes, routes en praktische reistips.",
+  "name": "SlaapUniek — bijzondere overnachtingen in Nederland",
+  "short_name": "SlaapUniek",
+  "description": "Ontdek unieke slaapplekken in Nederland: boomhutten, tiny houses, woonboten, yurts, kaslofts en wellnessplekken.",
   "id": "./",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#f6f4ed",
-  "theme_color": "#0f766e",
-  "categories": ["travel", "lifestyle", "navigation"],
+  "background_color": "#f4efe6",
+  "theme_color": "#1f2a1f",
+  "categories": ["travel", "lifestyle"],
   "lang": "nl-NL",
   "icons": [
     {
