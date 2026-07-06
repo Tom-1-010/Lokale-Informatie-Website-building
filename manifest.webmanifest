@@ -1,0 +1,22 @@
+{
+  "name": "VakantieKompas — vakantielanden, hotels en uitjes",
+  "short_name": "VakantieKompas",
+  "description": "Ontdek vakantielanden met hotels, uitjes, routes en praktische reistips.",
+  "id": "/",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f6f4ed",
+  "theme_color": "#0f766e",
+  "categories": ["travel", "lifestyle", "navigation"],
+  "lang": "nl-NL",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
