@@ -1,144 +1,121 @@
+const ICONS = {
+  forest:
+    '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 7 10h2l-3.5 5H9v3h6v-3h3.5L15 10h2l-5-7Z"/></svg>',
+  tiny:
+    '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m4 11 8-7 8 7"/><path d="M6 10v9h12v-9"/><rect x="10" y="13" width="4" height="6"/></svg>',
+  wellness:
+    '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-3Z"/><path d="M8 9c0-1.5 1-1.5 1-3M13 9c0-1.5 1-1.5 1-3"/></svg>',
+  romantic:
+    '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.6-9-9c-1.2-2.7.6-6 3.8-6 2 0 3.4 1.2 5.2 3.3C13.8 6.2 15.2 5 17.2 5c3.2 0 5 3.3 3.8 6-2 4.4-9 9-9 9Z"/></svg>',
+  mirror:
+    '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8.8-2Z"/></svg>',
+  glamping:
+    '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 3 19h18L12 4Z"/><path d="M12 12l-3.5 7h7L12 12Z"/></svg>',
+  nature:
+    '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 4c-8 0-13 4-13 10 0 3 2 6 6 6 6 0 10-6 7-16Z"/><path d="M6 20C9 14 13 10 17 8"/></svg>',
+  pin:
+    '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10Z"/><circle cx="12" cy="11" r="2.2"/></svg>'
+};
+
 const STAYS = [
   {
-    slug: "boomhut-veluwe",
-    title: "Boomhut boven de Veluwe",
-    type: "Boomhut",
-    region: "Gelderland",
-    price: "vanaf €189 p.n.",
-    audience: "stellen en avontuurlijke weekendtrips",
-    vibe: "romantisch, natuur, houtkachel",
-    tags: ["boomhut", "Veluwe", "romantisch", "hond welkom"],
-    summary:
-      "Een verhoogde houten suite tussen de bomen, met ochtendmist, een houtkachel en ontbijtmand aan een touw. Ideaal voor een weekend dat anders voelt dan een hotelnacht.",
-    wow: "Ontbijt wordt via een katrol omhoog gehaald naar het terras.",
-    whyTikTok: "Sterke eerste 3 seconden: deur open, uitzicht tussen bomen, ontbijtmand omhoog, close-up van houtkachel.",
-    cta: "Bekijk boomhutten",
-    url: "#"
+    slug: "boshuisje-met-hottub",
+    title: "Boshuisje met hottub",
+    location: "Veluwe, Nederland",
+    description:
+      "Overnacht midden in het bos en ontspan in je eigen hottub onder de sterrenhemel. Knus, warm en heerlijk afgelegen.",
+    price: "€129",
+    tag: "Toplocatie",
+    theme: "Boshuisjes",
+    scene: "scene-forest",
+    href: "/go/boshuisje-met-hottub"
   },
   {
-    slug: "tiny-house-duinen",
-    title: "Tiny house achter de duinen",
-    type: "Tiny house",
-    region: "Zeeland",
-    price: "vanaf €149 p.n.",
-    audience: "strandliefhebbers en jonge stellen",
-    vibe: "strand, compact, design",
-    tags: ["tiny house", "duinen", "strand", "design"],
-    summary:
-      "Een minimalistisch tiny house op fietsafstand van zee. Klein van formaat, maar groot in beleving: buitendouche, vuurplaats en een ochtendwandeling naar het strand.",
-    wow: "Binnen 7 minuten fiets je van je bed naar de eerste strandopgang.",
-    whyTikTok: "Voor/na-contrast: drukke stad uit, tiny house in, blote voeten in het zand.",
-    cta: "Bekijk tiny houses",
-    url: "#"
+    slug: "spiegelhuisje-aan-het-kanaal",
+    title: "Spiegelhuisje aan het kanaal",
+    location: "Den Bosch, Nederland",
+    description:
+      "Een huisje dat volledig opgaat in het landschap. Vanuit bed kijk je door de spiegelwand zó het water en de sterren in.",
+    price: "€154",
+    tag: "Bijzonder",
+    theme: "Spiegelhuisjes",
+    scene: "scene-mirror",
+    href: "/go/spiegelhuisje-aan-het-kanaal"
   },
   {
-    slug: "woonboot-friesland",
-    title: "Woonboot met eigen zwemtrap",
-    type: "Woonboot",
-    region: "Friesland",
-    price: "vanaf €169 p.n.",
-    audience: "rustzoekers en waterliefhebbers",
-    vibe: "water, zonsopkomst, kano",
-    tags: ["woonboot", "Friesland", "water", "kano"],
-    summary:
-      "Wakker worden op het water, koffie op het dek en direct zwemmen vanaf je eigen trap. Perfect voor mensen die rust zoeken maar niet in een standaard huisje willen zitten.",
-    wow: "Je stapt letterlijk vanuit je slaapkamer het water op.",
-    whyTikTok: "Drone-achtige hook: water, boot, koffie op dek en sprong vanaf de zwemtrap.",
-    cta: "Bekijk woonboten",
-    url: "#"
+    slug: "wellness-lodge-met-sauna",
+    title: "Wellness lodge met sauna",
+    location: "Limburg, Nederland",
+    description:
+      "Privésauna, regendouche en een terras met heuvelzicht. Volledige ontspanning voor een romantisch weekend met z'n tweeën.",
+    price: "€179",
+    tag: "Wellness",
+    theme: "Wellness",
+    scene: "scene-wellness",
+    href: "/go/wellness-lodge-met-sauna"
   },
   {
-    slug: "yurt-drenthe",
-    title: "Yurt onder de sterren",
-    type: "Yurt",
-    region: "Drenthe",
-    price: "vanaf €119 p.n.",
-    audience: "families en slow-travel gasten",
-    vibe: "glamping, sterrenhemel, kampvuur",
-    tags: ["yurt", "Drenthe", "glamping", "kampvuur"],
-    summary:
-      "Een ronde yurt met houtkachel, warme dekens en een vuurplaats buiten. Het voelt avontuurlijk, maar blijft comfortabel genoeg voor een eerste glampingervaring.",
-    wow: "Door het ronde dakraam kijk je vanuit bed naar de sterren.",
-    whyTikTok: "Magisch nachtbeeld: vuur, sterren, dampende mok thee en dakraam-shot vanuit bed.",
-    cta: "Bekijk glampingplekken",
-    url: "#"
-  },
-  {
-    slug: "kasloft-utrecht",
-    title: "Kasloft tussen het groen",
-    type: "Kasloft",
-    region: "Utrecht",
-    price: "vanaf €159 p.n.",
-    audience: "designliefhebbers en workation-gasten",
-    vibe: "licht, planten, design, workation",
-    tags: ["kas", "loft", "Utrecht", "workation"],
-    summary:
-      "Een lichte loft in een oude kas, omringd door planten en glas. Geschikt voor een rustige workation, romantisch nachtje weg of visuele content met veel daglicht.",
-    wow: "Je slaapt in een groene kas met hotelcomfort en ochtendzon van alle kanten.",
-    whyTikTok: "Sterke transitie: laptop dicht, kasdeur open, bed tussen planten en ontbijt in ochtendlicht.",
-    cta: "Bekijk designplekken",
-    url: "#"
-  },
-  {
-    slug: "wellness-molen",
-    title: "Molenhuisje met hottub",
-    type: "Molenhuisje",
-    region: "Noord-Holland",
-    price: "vanaf €219 p.n.",
-    audience: "luxe weekendjes en cadeaubonnen",
-    vibe: "wellness, historie, hottub",
-    tags: ["molen", "hottub", "wellness", "luxe"],
-    summary:
-      "Een historisch molenhuisje met moderne badkamer, privé-hottub en uitzicht op polderlandschap. Vooral sterk als cadeau of romantische verrassing.",
-    wow: "Privé-hottub naast een oude molen, met uitzicht over de polder.",
-    whyTikTok: "Visuele hook: dampende hottub, molenwieken, badjas-shot en zonsondergang.",
-    cta: "Bekijk wellnessplekken",
-    url: "#"
+    slug: "tiny-house-tussen-de-bomen",
+    title: "Tiny house tussen de bomen",
+    location: "Drenthe, Nederland",
+    description:
+      "Compact designhuisje op een stille plek tussen de bomen. Wakker worden met vogels, koffie op de veranda en totale rust.",
+    price: "€99",
+    tag: "Rust",
+    theme: "Tiny houses",
+    scene: "scene-tiny",
+    href: "/go/tiny-house-tussen-de-bomen"
   }
 ];
 
-const CONCEPT_CARDS = [
+const CATEGORIES = [
+  { name: "Boshuisjes", query: "boshuisje", icon: ICONS.forest, text: "Verscholen tussen de bomen" },
+  { name: "Tiny houses", query: "tiny house", icon: ICONS.tiny, text: "Klein wonen, groots slapen" },
+  { name: "Wellness", query: "wellness", icon: ICONS.wellness, text: "Sauna, hottub en ontspanning" },
+  { name: "Romantisch", query: "romantisch", icon: ICONS.romantic, text: "Voor een nachtje samen" },
+  { name: "Spiegelhuisjes", query: "spiegelhuisje", icon: ICONS.mirror, text: "Slapen in het landschap" },
+  { name: "Glamping", query: "glamping", icon: ICONS.glamping, text: "Kamperen met comfort" },
+  { name: "Natuurhuisjes", query: "natuur", icon: ICONS.nature, text: "Middenin het groen" },
+  { name: "Aan het water", query: "water", icon: ICONS.pin, text: "Uitzicht over het water" }
+];
+
+const INSPIRATION = [
   {
-    title: "Curated in plaats van alles",
-    text: "Alleen plekken met duidelijke wow-factor: uitzicht, vorm, verhaal, hot tub, design, natuur of bijzonder object."
+    label: "Romantisch",
+    title: "Verrassing voor je lief",
+    text: "Hottub, sterrenhemel en niemand in de buurt. De mooiste plekken voor een romantisch nachtje weg.",
+    style: "inspo-two"
   },
   {
-    title: "Gemaakt voor social video",
-    text: "Elke kaart heeft een TikTok-hoek. Dat maakt ad-creatie sneller en goedkoper met AI-scripts en beelden."
+    label: "Natuur",
+    title: "Wakker worden in het bos",
+    text: "Ochtendmist tussen de bomen en koffie op de veranda. Deze boshuisjes voelen als een andere wereld.",
+    style: "inspo-one"
   },
   {
-    title: "Affiliate eerst, platform later",
-    text: "Start met doorverwijzen naar partners. Voeg directe aanvragen, verhuurdersdashboard en betalingen pas toe na bewezen tractie."
+    label: "Uniek slapen",
+    title: "Plekken die je niet gelooft",
+    text: "Spiegelhuisjes, kaslofts en huisjes op het water: overnachtingen die je nog jaren navertelt.",
+    style: "inspo-three"
   }
 ];
 
-const ROADMAP = [
+const HOW_IT_WORKS = [
   {
-    step: "Stap 1",
-    title: "Curated collectie",
-    text: "Handmatig 50 tot 100 unieke plekken verzamelen met affiliate- of aanvraaglinks. Focus op sterke visuals en duidelijke doelgroepen."
+    title: "Zoek jouw plek",
+    text: "Blader door categorieën of zoek op regio en sfeer. Wij selecteren alleen plekken met een echte wow-factor."
   },
   {
-    step: "Stap 2",
-    title: "AI-contentmachine",
-    text: "Per plek automatisch hooks, captions, voice-over scripts, landingspagina's en advertentievarianten maken."
+    title: "Vergelijk en droom",
+    text: "Bekijk prijzen, sfeer en bijzonderheden per plek. Bewaar je favorieten en laat je verleiden."
   },
   {
-    step: "Stap 3",
-    title: "TikTok-validatie",
-    text: "Goedkope ads testen per categorie: boomhutten, wellness, tiny houses, woonboten en glamping. Winnaars krijgen aparte SEO-pagina's."
-  },
-  {
-    step: "Stap 4",
-    title: "Leadmodel voor verhuurders",
-    text: "Verhuurders betalen per lead, per plaatsing of via commissie. Pas daarna boekingskalender en directe betaling bouwen."
+    title: "Boek via onze partner",
+    text: "Je boekt veilig bij onze boekingspartners, tegen dezelfde prijs. Wij verdienen soms een kleine commissie — jij betaalt niets extra."
   }
 ];
 
-const state = {
-  selectedStay: STAYS[0],
-  query: ""
-};
+const state = { query: "" };
 
 const byId = (id) => document.getElementById(id);
 
@@ -148,146 +125,44 @@ function normalize(value) {
 
 function stayMatches(stay, query) {
   if (!query) return true;
-  const haystack = normalize([
-    stay.title,
-    stay.type,
-    stay.region,
-    stay.audience,
-    stay.vibe,
-    stay.summary,
-    stay.wow,
-    stay.tags.join(" ")
-  ].join(" "));
-  return haystack.includes(normalize(query));
+  const haystack = normalize(
+    [stay.title, stay.location, stay.description, stay.tag, stay.theme].join(" ")
+  );
+  return normalize(query)
+    .split(/\s+/)
+    .every((word) => haystack.includes(word));
 }
 
-function getFilteredStays() {
-  return STAYS.filter((stay) => stayMatches(stay, state.query));
-}
-
-function renderStayList() {
-  const list = byId("stayList");
-  const stays = getFilteredStays();
+function renderStays() {
+  const stays = STAYS.filter((stay) => stayMatches(stay, state.query));
+  const hint = byId("searchHint");
 
   if (!stays.length) {
-    list.innerHTML = '<div class="empty-state">Geen plek gevonden. Probeer bijvoorbeeld "boomhut", "sauna", "water" of "Veluwe".</div>';
+    byId("stayGrid").innerHTML =
+      '<div class="empty-state">Geen bijzondere plek gevonden. Probeer bijvoorbeeld "hottub", "Veluwe", "wellness" of "tiny house".</div>';
+    hint.textContent = "Geen resultaten voor deze zoekopdracht.";
     return;
   }
 
-  if (!stays.some((stay) => stay.slug === state.selectedStay.slug)) {
-    state.selectedStay = stays[0];
-  }
+  hint.textContent = state.query
+    ? `${stays.length} ${stays.length === 1 ? "plek" : "plekken"} gevonden voor "${state.query}"`
+    : "";
 
-  list.innerHTML = stays
+  byId("stayGrid").innerHTML = stays
     .map(
       (stay) => `
-        <button class="stay-button ${stay.slug === state.selectedStay.slug ? "active" : ""}" type="button" data-stay="${stay.slug}">
-          <span>${stay.type}</span>
-          <strong>${stay.title}</strong>
-          <small>${stay.region} · ${stay.price}</small>
-        </button>
-      `
-    )
-    .join("");
-
-  list.querySelectorAll("[data-stay]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const nextStay = STAYS.find((stay) => stay.slug === button.dataset.stay);
-      if (!nextStay) return;
-      state.selectedStay = nextStay;
-      renderAll();
-    });
-  });
-}
-
-function renderStayDetail() {
-  const stay = state.selectedStay;
-  byId("stayDetail").innerHTML = `
-    <div class="stay-detail-header">
-      <div>
-        <p class="eyebrow">${stay.type} · ${stay.region}</p>
-        <h3>${stay.title}</h3>
-        <p>${stay.summary}</p>
-      </div>
-      <div class="price-bubble">
-        <span>Richtprijs</span>
-        <strong>${stay.price}</strong>
-      </div>
-    </div>
-
-    <div class="wow-box">
-      <span>Wow-factor</span>
-      <strong>${stay.wow}</strong>
-    </div>
-
-    <ul class="tags" aria-label="Tags">
-      ${stay.tags.map((tag) => `<li class="tag">${tag}</li>`).join("")}
-    </ul>
-
-    <div class="detail-grid">
-      <div class="detail-card">
-        <strong>Voor wie?</strong>
-        <p>${stay.audience}</p>
-      </div>
-      <div class="detail-card">
-        <strong>Vibe</strong>
-        <p>${stay.vibe}</p>
-      </div>
-      <div class="detail-card">
-        <strong>Waarom geschikt voor TikTok?</strong>
-        <p>${stay.whyTikTok}</p>
-      </div>
-    </div>
-
-    <a class="button button-primary" href="${stay.url}" aria-label="${stay.cta}: ${stay.title}">${stay.cta}</a>
-  `;
-}
-
-function renderConceptCards() {
-  byId("conceptCards").innerHTML = CONCEPT_CARDS
-    .map(
-      (card) => `
-        <article class="card">
-          <span class="badge">Strategie</span>
-          <strong>${card.title}</strong>
-          <p>${card.text}</p>
-        </article>
-      `
-    )
-    .join("");
-}
-
-function renderAdGrid() {
-  const stay = state.selectedStay;
-  const hooks = [
-    `Je gelooft niet dat je in Nederland zo kunt slapen: ${stay.title.toLowerCase()}.`,
-    `POV: je boekt geen hotel, maar een ${stay.type.toLowerCase()} in ${stay.region}.`,
-    `Deze plek heeft één detail waardoor mensen blijven kijken: ${stay.wow.toLowerCase()}`,
-    `AI-videohoek: ${stay.whyTikTok}`
-  ];
-
-  byId("adGrid").innerHTML = hooks
-    .map(
-      (hook, index) => `
-        <article class="ad-card">
-          <span>Hook ${index + 1}</span>
-          <strong>${hook}</strong>
-          <p>Gebruik dit als basis voor TikTok, Reels, Shorts of een AI-video prompt.</p>
-        </article>
-      `
-    )
-    .join("");
-}
-
-function renderRoadmap() {
-  byId("timeline").innerHTML = ROADMAP
-    .map(
-      (item) => `
-        <article class="timeline-item">
-          <div class="timeline-step">${item.step}</div>
-          <div>
-            <h3>${item.title}</h3>
-            <p>${item.text}</p>
+        <article class="stay-card">
+          <div class="stay-media ${stay.scene}">
+            <span class="stay-tag">✦ ${stay.tag}</span>
+          </div>
+          <div class="stay-body">
+            <h3>${stay.title}</h3>
+            <span class="stay-location">${ICONS.pin} ${stay.location}</span>
+            <p>${stay.description}</p>
+            <div class="stay-foot">
+              <span class="stay-price">vanaf ${stay.price}<small>per nacht</small></span>
+              <a class="button button-primary stay-cta" href="${stay.href}" aria-label="Bekijk beschikbaarheid: ${stay.title}">Bekijk beschikbaarheid</a>
+            </div>
           </div>
         </article>
       `
@@ -295,12 +170,53 @@ function renderRoadmap() {
     .join("");
 }
 
-function renderAll() {
-  renderStayList();
-  renderStayDetail();
-  renderConceptCards();
-  renderAdGrid();
-  renderRoadmap();
+function renderCategories() {
+  const grid = byId("categoryGrid");
+
+  grid.innerHTML = CATEGORIES.map(
+    (category) => `
+      <button class="category-card ${state.query === category.query ? "active" : ""}" type="button" data-query="${category.query}">
+        <span class="category-icon" aria-hidden="true">${category.icon}</span>
+        <strong>${category.name}</strong>
+        <small>${category.text}</small>
+      </button>
+    `
+  ).join("");
+
+  grid.querySelectorAll("[data-query]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const nextQuery = button.dataset.query === state.query ? "" : button.dataset.query;
+      state.query = nextQuery;
+      byId("staySearch").value = nextQuery;
+      renderCategories();
+      renderStays();
+      byId("uitgelicht").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+}
+
+function renderInspiration() {
+  byId("inspirationGrid").innerHTML = INSPIRATION.map(
+    (item) => `
+      <article class="inspo-card ${item.style}">
+        <span>${item.label}</span>
+        <strong>${item.title}</strong>
+        <p>${item.text}</p>
+      </article>
+    `
+  ).join("");
+}
+
+function renderSteps() {
+  byId("stepsList").innerHTML = HOW_IT_WORKS.map(
+    (step, index) => `
+      <article class="step-card">
+        <div class="step-num" aria-hidden="true">${index + 1}</div>
+        <h3>${step.title}</h3>
+        <p>${step.text}</p>
+      </article>
+    `
+  ).join("");
 }
 
 function initSearch() {
@@ -309,15 +225,35 @@ function initSearch() {
 
   input.addEventListener("input", (event) => {
     state.query = event.target.value.trim();
-    renderAll();
+    renderCategories();
+    renderStays();
   });
 
   clearButton.addEventListener("click", () => {
     input.value = "";
     state.query = "";
-    state.selectedStay = STAYS[0];
-    renderAll();
+    renderCategories();
+    renderStays();
     input.focus();
+  });
+}
+
+function initNewsletter() {
+  const form = byId("newsletterForm");
+  const message = byId("newsletterMsg");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const email = byId("newsletterEmail");
+
+    if (!email.value.trim() || !email.checkValidity()) {
+      message.textContent = "Vul een geldig e-mailadres in om mee te dromen.";
+      email.focus();
+      return;
+    }
+
+    message.textContent = "Dankjewel! Zodra de nieuwsbrief live is, ben jij een van de eersten. ✦";
+    form.reset();
   });
 }
 
@@ -333,5 +269,9 @@ function registerServiceWorker() {
 
 byId("year").textContent = new Date().getFullYear();
 initSearch();
-renderAll();
+initNewsletter();
+renderCategories();
+renderStays();
+renderInspiration();
+renderSteps();
 registerServiceWorker();

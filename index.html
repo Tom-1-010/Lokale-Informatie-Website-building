@@ -3,32 +3,36 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#1f2a1f" />
-    <meta name="description" content="SlaapUniek verzamelt bijzondere overnachtingsplekken in Nederland: boomhutten, tiny houses, yurts, woonboten, kaslofts en wellnessplekken." />
+    <meta name="theme-color" content="#5A2CA0" />
+    <meta name="description" content="BijzonderNachtje verzamelt unieke overnachtingen in Nederland en daarbuiten: boshuisjes, tiny houses, wellnesshuisjes, spiegelhuisjes, glamping en romantische verblijven." />
 
-    <title>SlaapUniek — bijzondere overnachtingen in Nederland</title>
+    <title>BijzonderNachtje — jouw bijzondere nachtje weg begint hier</title>
 
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/icon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap" />
     <link rel="stylesheet" href="styles.css" />
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="SlaapUniek" />
+    <meta name="apple-mobile-web-app-title" content="BijzonderNachtje" />
     <meta name="format-detection" content="telephone=no" />
 
-    <meta property="og:title" content="SlaapUniek" />
-    <meta property="og:description" content="Bijzondere overnachtingen in Nederland, gemaakt voor short-form video, AI-content en directe boekingsintentie." />
+    <meta property="og:title" content="BijzonderNachtje" />
+    <meta property="og:description" content="Ontdek unieke overnachtingen in Nederland en daarbuiten. Van boshuisjes tot wellnesshuisjes en romantische tiny houses." />
     <meta property="og:type" content="website" />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LodgingBusiness",
-        "name": "SlaapUniek",
-        "description": "Platformconcept voor bijzondere overnachtingsplekken in Nederland.",
-        "areaServed": "Nederland"
+        "@type": "WebSite",
+        "name": "BijzonderNachtje",
+        "description": "Platform voor bijzondere overnachtingen: boshuisjes, tiny houses, wellnesshuisjes, spiegelhuisjes, glamping en romantische verblijven.",
+        "inLanguage": "nl-NL"
       }
     </script>
   </head>
@@ -37,117 +41,177 @@
 
     <header class="site-header">
       <nav class="topbar" aria-label="Hoofdnavigatie">
-        <a class="brand" href="#top" aria-label="SlaapUniek startpagina">
-          <span class="brand-mark">SU</span>
-          <span>
-            <strong>SlaapUniek</strong>
-            <small>bijzonder slapen in Nederland</small>
+        <a class="brand" href="#top" aria-label="BijzonderNachtje startpagina">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="26" height="26" fill="none" aria-hidden="true">
+              <path d="M31 6a17 17 0 1 0 11 30A19 19 0 0 1 31 6Z" fill="#fff" />
+              <path d="M36 8l1.2 3 3 1.2-3 1.2-1.2 3-1.2-3-3-1.2 3-1.2 1.2-3Z" fill="#FFC5DE" />
+            </svg>
           </span>
+          <span class="brand-name">bijz<span class="brand-moon" aria-hidden="true">o</span>nder<em>nachtje</em></span>
         </a>
         <div class="nav-links" aria-label="Secties">
-          <a href="#plekken">Plekken</a>
-          <a href="#concept">Concept</a>
-          <a href="#ads">TikTok Ads</a>
-          <a href="#verhuurders">Verhuurders</a>
+          <a href="#categorieen">Categorieën</a>
+          <a href="#uitgelicht">Uitgelicht</a>
+          <a href="#inspiratie">Inspiratie</a>
+          <a href="#hoe-werkt-het">Hoe het werkt</a>
         </div>
+        <a class="button button-primary header-cta" href="#uitgelicht">Ontdek bijzondere plekken</a>
       </nav>
     </header>
 
     <main id="content">
       <section class="hero" id="top">
         <div class="hero-copy">
-          <p class="eyebrow">Nieuw platformconcept</p>
-          <h1>Boek geen hotel. Boek een verhaal.</h1>
-          <p class="hero-text">Een Nederlandse website voor unieke overnachtingsplekken die zichzelf bijna verkopen op TikTok: boomhutten, tiny houses, woonboten, yurts, molens, kaslofts en wellnessplekken.</p>
+          <p class="eyebrow">✦ Bijzonder slapen in Nederland en daarbuiten</p>
+          <h1>Jouw bijzondere nachtje weg begint hier</h1>
+          <p class="hero-text">Ontdek unieke overnachtingen in Nederland en daarbuiten. Van boshuisjes tot wellnesshuisjes en romantische tiny houses.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#plekken">Ontdek voorbeeldplekken</a>
-            <a class="button button-secondary" href="#ads">Bekijk advertentiehoek</a>
+            <a class="button button-primary" href="#uitgelicht">Ontdek bijzondere plekken</a>
+            <a class="button button-secondary" href="#inspiratie">Laat je inspireren</a>
+          </div>
+          <ul class="hero-trust" aria-label="Waar BijzonderNachtje voor staat">
+            <li>Handmatig geselecteerd</li>
+            <li>Boeken via vertrouwde partners</li>
+            <li>Gratis inspiratie</li>
+          </ul>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Dromerige illustratie van een huisje onder een sterrenhemel met maan en wolken">
+          <svg class="night-scene" viewBox="0 0 420 340" fill="none" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#2D174D" />
+                <stop offset=".55" stop-color="#5A2CA0" />
+                <stop offset="1" stop-color="#9A6BD8" />
+              </linearGradient>
+              <linearGradient id="moonG" x1="300" y1="40" x2="340" y2="110" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFE3F0" />
+                <stop offset="1" stop-color="#FF6FAF" />
+              </linearGradient>
+              <linearGradient id="hill" x1="0" y1="230" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#3A2255" />
+                <stop offset="1" stop-color="#2D174D" />
+              </linearGradient>
+            </defs>
+            <rect width="420" height="340" fill="url(#sky)" />
+            <g fill="#FFC5DE">
+              <circle cx="52" cy="52" r="2.4" /><circle cx="120" cy="34" r="1.6" /><circle cx="188" cy="70" r="2" />
+              <circle cx="252" cy="30" r="1.5" /><circle cx="86" cy="118" r="1.6" /><circle cx="382" cy="140" r="2" />
+              <circle cx="150" cy="150" r="1.4" /><circle cx="230" cy="112" r="1.8" /><circle cx="30" cy="180" r="1.6" />
+              <path d="M296 148l2.3 5.7 5.7 2.3-5.7 2.3-2.3 5.7-2.3-5.7-5.7-2.3 5.7-2.3 2.3-5.7Z" />
+              <path d="M74 84l1.7 4.3 4.3 1.7-4.3 1.7-1.7 4.3-1.7-4.3-4.3-1.7 4.3-1.7 1.7-4.3Z" opacity=".85" />
+            </g>
+            <path d="M354 42a44 44 0 1 0 26 76 50 50 0 0 1-26-76Z" fill="url(#moonG)" />
+            <g fill="#F3EDFB" opacity=".26">
+              <ellipse cx="90" cy="212" rx="72" ry="20" />
+              <ellipse cx="150" cy="224" rx="60" ry="16" />
+              <ellipse cx="330" cy="196" rx="66" ry="18" />
+            </g>
+            <path d="M0 268c70-30 140-44 210-38s140 30 210 18v92H0v-72Z" fill="url(#hill)" />
+            <g>
+              <path d="M150 236l58-44 58 44v66H150v-66Z" fill="#7D4CC6" />
+              <path d="M138 242l70-54 70 54" stroke="#FAF7FB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              <rect x="192" y="262" width="32" height="40" rx="7" fill="#2D174D" />
+              <rect x="238" y="258" width="24" height="22" rx="6" fill="#FFC5DE" opacity=".95" />
+            </g>
+            <g fill="#F3EDFB" opacity=".2">
+              <ellipse cx="60" cy="316" rx="90" ry="18" />
+              <ellipse cx="360" cy="322" rx="100" ry="20" />
+            </g>
+          </svg>
+          <div class="hero-visual-badge">
+            <strong>Boshuisje met hottub</strong>
+            <span>Veluwe · vanaf €129 / nacht</span>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Positionering SlaapUniek">
-          <div class="visual-stack">
-            <span class="visual-card visual-card-one">boomhut</span>
-            <span class="visual-card visual-card-two">tiny house</span>
-            <span class="visual-card visual-card-three">hot tub</span>
-          </div>
-          <h2>SlaapUniek</h2>
-          <p>Niet de grootste aanbieder, maar de plek waar elke overnachting een haakje heeft voor social video en directe boekingsintentie.</p>
-          <div class="mini-grid">
-            <span>Focus<br /><strong>Nederland</strong></span>
-            <span>Verdienmodel<br /><strong>affiliate / leads</strong></span>
-            <span>Contentmotor<br /><strong>AI + TikTok</strong></span>
-            <span>MVP<br /><strong>curated aanbod</strong></span>
-          </div>
-        </aside>
       </section>
 
-      <section class="search-panel" aria-label="Zoeken en filteren">
-        <label for="staySearch">Zoek op plek, regio of vibe</label>
+      <section class="search-panel" id="zoeken" aria-label="Zoeken en filteren">
+        <label for="staySearch">Waar wil je wakker worden?</label>
         <div class="search-row">
-          <input id="staySearch" type="search" placeholder="Bijvoorbeeld: boomhut, sauna, Veluwe, romantisch, hond" autocomplete="off" />
+          <span class="search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.6-3.6" /></svg>
+          </span>
+          <input id="staySearch" type="search" placeholder="Zoek op plek, regio of sfeer — bijv. hottub, Veluwe, romantisch" autocomplete="off" />
           <button class="button button-dark" type="button" id="clearSearch">Reset</button>
         </div>
+        <p class="search-hint" id="searchHint" aria-live="polite"></p>
       </section>
 
-      <section class="section" id="plekken">
+      <section class="section" id="categorieen">
         <div class="section-heading">
-          <p class="eyebrow">Voorbeeldaanbod</p>
-          <h2>Bijzondere slaapplekken</h2>
-          <p>Deze plekken zijn fictieve voorbeeldkaarten. Later kun je ze vervangen door echte affiliate-aanbiedingen of eigen leads van verhuurders.</p>
+          <p class="eyebrow">✦ Kies je sfeer</p>
+          <h2>Bijzondere categorieën</h2>
+          <p>Van verscholen boshuisjes tot spiegelhuisjes die opgaan in het landschap. Kies een categorie en filter direct het aanbod.</p>
         </div>
-        <div class="stay-layout">
-          <div class="stay-list" id="stayList" aria-label="Overnachtingsplekken"></div>
-          <article class="stay-detail" id="stayDetail" aria-live="polite"></article>
-        </div>
+        <div class="category-grid" id="categoryGrid"></div>
       </section>
 
-      <section class="section split-section" id="concept">
-        <div>
-          <p class="eyebrow">Waarom anders</p>
-          <h2>Niet alleen zoeken. Verlangen opwekken.</h2>
-          <p>Natuurhuisje is sterk in natuur en rust. SlaapUniek positioneert zich smaller en commerciëler: elke plek moet een duidelijke wow-factor, doelgroep en short-form videohoek hebben.</p>
-        </div>
-        <div class="cards" id="conceptCards"></div>
-      </section>
-
-      <section class="section" id="ads">
+      <section class="section" id="uitgelicht">
         <div class="section-heading">
-          <p class="eyebrow">AI + TikTok</p>
-          <h2>Advertentiehoek per plek</h2>
-          <p>Voor elke plek kun je automatisch scripts, hooks, captions en AI-beelden genereren. De website is daarom ingericht rond visuele redenen om te boeken.</p>
+          <p class="eyebrow">✦ Uitgelicht</p>
+          <h2>Bijzondere overnachtingen</h2>
+          <p>Handmatig geselecteerde plekken met een duidelijke wow-factor. Je boekt via onze partners; wij helpen je alleen dromen én vinden.</p>
         </div>
-        <div class="ad-grid" id="adGrid"></div>
+        <div class="stay-grid" id="stayGrid" aria-live="polite"></div>
       </section>
 
-      <section class="section roadmap" id="roadmap">
+      <section class="section inspiration" id="inspiratie">
         <div class="section-heading">
-          <p class="eyebrow">MVP-route</p>
-          <h2>Van curated site naar boekingsmachine</h2>
-          <p>Begin klein met handmatig samengestelde plekken en affiliate-links. Bouw pas later accounts, beschikbaarheid en directe betaling.</p>
+          <p class="eyebrow">✦ Inspiratie</p>
+          <h2>Weekend weg, maar dan bijzonder.</h2>
+          <p>Geen standaard hotelkamer, maar een nacht die je nog jaren navertelt. Laat je meevoeren door onze favoriete thema's.</p>
         </div>
-        <div class="timeline" id="timeline"></div>
+        <div class="inspiration-grid" id="inspirationGrid"></div>
       </section>
 
-      <section class="host-panel" id="verhuurders">
-        <div>
-          <p class="eyebrow">Voor verhuurders</p>
-          <h2>Heb je een plek die TikTok-waardig is?</h2>
-          <p>Voor verhuurders wordt dit later een leadformulier: upload foto's, beschrijf de wow-factor en ontvang AI-advertentievoorstellen voor je accommodatie.</p>
+      <section class="section" id="hoe-werkt-het">
+        <div class="section-heading">
+          <p class="eyebrow">✦ Zo werkt het</p>
+          <h2>In drie stappen naar jouw bijzondere nachtje</h2>
         </div>
-        <a class="button button-primary" href="#verhuurders">Meld plek aan</a>
+        <div class="steps" id="stepsList"></div>
+      </section>
+
+      <section class="newsletter" id="nieuwsbrief">
+        <div class="newsletter-inner">
+          <div class="newsletter-moon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="34" height="34" fill="none"><path d="M31 6a17 17 0 1 0 11 30A19 19 0 0 1 31 6Z" fill="#FAF7FB" /><path d="M37 9l1.3 3.2 3.2 1.3-3.2 1.3-1.3 3.2-1.3-3.2-3.2-1.3 3.2-1.3L37 9Z" fill="#FFC5DE" /></svg>
+          </div>
+          <h2>Droom weg met inspiratie</h2>
+          <p>Ontvang de mooiste bijzondere plekken en tips voor een weekendje weg direct in je mailbox. Geen spam, alleen dromen.</p>
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <label class="visually-hidden" for="newsletterEmail">E-mailadres</label>
+            <input id="newsletterEmail" type="email" name="email" placeholder="jouw e-mailadres" autocomplete="email" required />
+            <button class="button button-accent" type="submit">Aanmelden</button>
+          </form>
+          <p class="newsletter-msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+        </div>
       </section>
     </main>
 
     <nav class="mobile-nav" aria-label="Mobiele navigatie">
-      <a href="#plekken">Plekken</a>
-      <a href="#concept">Concept</a>
-      <a href="#ads">Ads</a>
-      <a href="#verhuurders">Aanmelden</a>
+      <a href="#uitgelicht">Ontdek</a>
+      <a href="#categorieen">Categorieën</a>
+      <a href="#inspiratie">Inspiratie</a>
+      <a href="#nieuwsbrief">Nieuwsbrief</a>
     </nav>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> SlaapUniek. Concept-MVP voor bijzondere overnachtingen in Nederland.</p>
-      <p>Alle voorbeeldplekken zijn fictief. Vervang placeholders later door echte affiliate-links, leadformulieren of partneraanbod.</p>
+      <div class="footer-top">
+        <a class="brand footer-brand" href="#top" aria-label="Terug naar boven">
+          <span class="brand-name">bijz<span class="brand-moon" aria-hidden="true">o</span>nder<em>nachtje</em></span>
+        </a>
+        <nav class="footer-links" aria-label="Voetnavigatie">
+          <a href="#categorieen">Categorieën</a>
+          <a href="#uitgelicht">Uitgelicht</a>
+          <a href="#inspiratie">Inspiratie</a>
+          <a href="#hoe-werkt-het">Hoe het werkt</a>
+          <a href="#nieuwsbrief">Nieuwsbrief</a>
+        </nav>
+      </div>
+      <p class="footer-disclaimer">BijzonderNachtje kan een vergoeding ontvangen wanneer je via onze links boekt. Dit kost jou niets extra.</p>
+      <p>© <span id="year"></span> BijzonderNachtje. Alle getoonde accommodaties zijn voorlopige voorbeelden; prijzen en beschikbaarheid volgen via onze boekingspartners.</p>
     </footer>
 
     <script src="app.js" defer></script>
