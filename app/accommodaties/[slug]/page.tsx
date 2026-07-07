@@ -1,11 +1,15 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getAccommodationBySlug } from '@/lib/data/accommodations';
+import { accommodations, getAccommodationBySlug } from '@/lib/data/accommodations';
 import { getCategoryBySlug } from '@/lib/data/categories';
 import { MapPin, Check, Info, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+
+export function generateStaticParams() {
+  return accommodations.map((accommodation) => ({ slug: accommodation.slug }));
+}
 
 interface AccommodationPageProps {
   params: Promise<{
