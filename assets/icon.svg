@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
   <title id="title">BijzonderNachtje icoon</title>
-  <desc id="desc">Paars app-icoon met een roze maansikkel en sterren.</desc>
+  <desc id="desc">Nachtpaars app-icoon met een warme gouden maansikkel en sterren.</desc>
   <defs>
     <linearGradient id="bg" x1="80" x2="432" y1="64" y2="448" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2D174D" />
-      <stop offset="1" stop-color="#7D4CC6" />
+      <stop stop-color="#1C1230" />
+      <stop offset="1" stop-color="#6D28D9" />
     </linearGradient>
     <linearGradient id="moon" x1="180" x2="360" y1="130" y2="400" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFC5DE" />
-      <stop offset="1" stop-color="#FF6FAF" />
+      <stop stop-color="#FDE68A" />
+      <stop offset="1" stop-color="#F59E0B" />
     </linearGradient>
   </defs>
   <rect width="512" height="512" rx="112" fill="url(#bg)" />
   <path d="M312 92a170 170 0 1 0 104 292A186 186 0 0 1 312 92Z" fill="url(#moon)" />
-  <path d="M360 118l10 26 26 10-26 10-10 26-10-26-26-10 26-10 10-26Z" fill="#FAF7FB" />
-  <circle cx="128" cy="140" r="9" fill="#F3EDFB" opacity=".9" />
-  <circle cx="404" cy="228" r="7" fill="#F3EDFB" opacity=".75" />
-  <circle cx="160" cy="392" r="7" fill="#FFC5DE" opacity=".85" />
+  <path d="M360 118l10 26 26 10-26 10-10 26-10-26-26-10 26-10 10-26Z" fill="#FFFDF8" />
+  <circle cx="128" cy="140" r="9" fill="#A78BFA" opacity=".9" />
+  <circle cx="404" cy="228" r="7" fill="#FFFDF8" opacity=".75" />
+  <circle cx="160" cy="392" r="7" fill="#FDE68A" opacity=".85" />
 </svg>
