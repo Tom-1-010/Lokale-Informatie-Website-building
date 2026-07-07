@@ -27,4 +27,17 @@ declare module 'lucide-react' {
   export const ShieldCheck: LucideIcon;
   export const Calendar: LucideIcon;
   export const Facebook: LucideIcon;
+  export const Star: LucideIcon;
+  export const Share2: LucideIcon;
+  export const Camera: LucideIcon;
+  export const ChevronLeft: LucideIcon;
+  export const ChevronRight: LucideIcon;
+  export const Users: LucideIcon;
+  export const Wifi: LucideIcon;
+  export const Flame: LucideIcon;
+  export const PawPrint: LucideIcon;
+  export const Trees: LucideIcon;
+  export const Quote: LucideIcon;
+  export const BadgeCheck: LucideIcon;
+  export const Footprints: LucideIcon;
 }
