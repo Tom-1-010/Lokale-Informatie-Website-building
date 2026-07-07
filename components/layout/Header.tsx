@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { ChevronDown, ArrowRight } from 'lucide-react';
+import { provinces } from '@/lib/data/provinces';
 
 export default function Header() {
   return (
@@ -14,13 +16,27 @@ export default function Header() {
           <span className="brand-name">bijz<span className="brand-moon" aria-hidden="true">o</span>nder<em>nachtje</em></span>
         </Link>
         <div className="nav-links" aria-label="Secties">
-          <Link href="#categorieen">Categorieën</Link>
-          <Link href="#uitgelicht">Uitgelicht</Link>
-          <Link href="#inspiratie">Inspiratie</Link>
-          <Link href="#hoe-werkt-het">Hoe het werkt</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/accommodaties">Bijzondere plekjes</Link>
+          <div className="nav-dropdown">
+            <Link href="/accommodaties" className="nav-dropdown-trigger">
+              Regio&apos;s
+              <ChevronDown width={16} height={16} strokeWidth={2.4} aria-hidden="true" />
+            </Link>
+            <div className="nav-dropdown-menu" role="menu">
+              {provinces.map((province) => (
+                <Link key={province.code} href="/accommodaties" role="menuitem">
+                  {province.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <Link href="/#inspiratie">Inspiratie</Link>
+          <Link href="/contact">Over ons</Link>
         </div>
-        <Link className="button button-primary header-cta" href="#uitgelicht">Ontdek bijzondere plekken</Link>
+        <Link className="button button-accent header-cta" href="/accommodaties">
+          Bekijk plekjes
+          <ArrowRight width={16} height={16} strokeWidth={2.4} aria-hidden="true" />
+        </Link>
       </nav>
     </header>
   );
