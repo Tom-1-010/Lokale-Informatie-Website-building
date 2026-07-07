@@ -14,4 +14,15 @@ declare module 'lucide-react' {
   export const ArrowLeft: LucideIcon;
   export const Map: LucideIcon;
   export const Search: LucideIcon;
+  export const Send: LucideIcon;
+  export const Clock: LucideIcon;
+  export const MessageCircle: LucideIcon;
+  export const Instagram: LucideIcon;
+  export const Handshake: LucideIcon;
+  export const Newspaper: LucideIcon;
+  export const HelpCircle: LucideIcon;
+  export const ChevronDown: LucideIcon;
+  export const CheckCircle2: LucideIcon;
+  export const Lightbulb: LucideIcon;
+  export const ShieldCheck: LucideIcon;
 }

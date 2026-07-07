@@ -7,7 +7,7 @@ export default function Footer() {
         <Link href="#uitgelicht">Ontdek</Link>
         <Link href="#categorieen">Categorieën</Link>
         <Link href="#inspiratie">Inspiratie</Link>
-        <Link href="#nieuwsbrief">Nieuwsbrief</Link>
+        <Link href="/contact">Contact</Link>
       </nav>
 
       <footer className="site-footer">
@@ -21,6 +21,7 @@ export default function Footer() {
             <Link href="#inspiratie">Inspiratie</Link>
             <Link href="#hoe-werkt-het">Hoe het werkt</Link>
             <Link href="#nieuwsbrief">Nieuwsbrief</Link>
+            <Link href="/contact">Contact</Link>
           </nav>
         </div>
         <p className="footer-disclaimer">
