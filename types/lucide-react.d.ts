@@ -25,4 +25,6 @@ declare module 'lucide-react' {
   export const CheckCircle2: LucideIcon;
   export const Lightbulb: LucideIcon;
   export const ShieldCheck: LucideIcon;
+  export const Calendar: LucideIcon;
+  export const Facebook: LucideIcon;
 }
