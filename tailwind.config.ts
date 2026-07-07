@@ -21,7 +21,7 @@ const config: Config = {
         accent_soft: "#FFC5DE",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        sans: ["var(--font-rubik)", "system-ui", "sans-serif"],
         serif: ["var(--font-merriweather)", "Georgia", "serif"],
       },
     },
