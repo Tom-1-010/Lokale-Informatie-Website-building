@@ -9,7 +9,7 @@ Een moderne, mobile-first affiliate website voor bijzondere overnachtingen: bosh
 ## Branding
 
 - Dromerig, modern, zacht, vriendelijk, betrouwbaar
-- Kleuren: diep paars `#5A2CA0`, paars `#7D4CC6`, roze `#FF6FAF`, licht roze `#FFC5DE`, gebroken wit `#FAF7FB`, licht lavendel `#F3EDFB`
+- Kleuren: nachtpaars `#4C1D95`, CTA-paars `#6D28D9`, lavendel `#A78BFA`, warm crème `#FFFDF8`, zandwit `#F7F2EA`, natuur-groen `#1F6B3A`, warm goud `#F59E0B`
 - Afgeronde vormen, maan/sterren/wolken als subtiele details
 - Typografie: Rubik (via Google Fonts, met systeemfont-fallback)
 
