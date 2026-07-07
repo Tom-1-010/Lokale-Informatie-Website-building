@@ -7,6 +7,10 @@ import AccommodationCard from '@/components/accommodations/AccommodationCard';
 import { ArrowLeft, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
+export function generateStaticParams() {
+  return categories.map((category) => ({ slug: category.slug }));
+}
+
 interface CategoryPageProps {
   params: Promise<{
     slug: string;
