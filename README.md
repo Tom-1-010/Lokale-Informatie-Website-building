@@ -1,42 +1,32 @@
-# SlaapUniek
+# BijzonderNachtje
 
-Een moderne website/web-app voor bijzondere overnachtingsplekken in Nederland.
+Een moderne, mobile-first affiliate website voor bijzondere overnachtingen: boshuisjes, tiny houses, wellnesshuisjes, romantische verblijven, spiegelhuisjes, glamping en natuurhuisjes.
 
-## Nieuwe richting
+## Kernbelofte
 
-SlaapUniek is geen website over vakantielanden meer. Het concept is om unieke slaapplekken in Nederland te verzamelen en te verkopen via sterke visuals, AI-content en TikTok-advertenties.
+> Jouw bijzondere nachtje weg begint hier.
 
-Voorbeelden van plekken:
+## Branding
 
-- boomhutten
-- tiny houses
-- woonboten
-- yurts
-- kaslofts
-- molenhuisjes
-- wellnessplekken met hottub of sauna
+- Dromerig, modern, zacht, vriendelijk, betrouwbaar
+- Kleuren: diep paars `#5A2CA0`, paars `#7D4CC6`, roze `#FF6FAF`, licht roze `#FFC5DE`, gebroken wit `#FAF7FB`, licht lavendel `#F3EDFB`
+- Afgeronde vormen, maan/sterren/wolken als subtiele details
+- Typografie: Rubik (via Google Fonts, met systeemfont-fallback)
 
-## Positionering
+## Deze versie
 
-Bestaande partijen zoals Natuurhuisje zijn sterk in natuurhuisjes en rust. SlaapUniek focust scherper op plekken met een duidelijke wow-factor die goed werken in short-form video.
+De homepage/landingpage bevat:
 
-Kernbelofte:
-
-> Boek geen hotel. Boek een verhaal.
-
-## Eerste versie
-
-Deze MVP bevat:
-
-- nieuwe branding: SlaapUniek
-- Nederland als enige markt
-- fictieve voorbeeldplekken
-- zoekfunctie op plek, regio en vibe
-- detailpaneel per overnachtingsplek
-- wow-factor per plek
-- AI/TikTok-advertentiehooks per geselecteerde plek
-- MVP-roadmap richting affiliate, leads en later boekingen
-- PWA-basis voor iOS/web-app gebruik
+- Header met logo, navigatie en CTA
+- Hero met dromerige nachtscene-illustratie
+- Zoek/filterblok (filtert op plek, regio en sfeer)
+- Categoriekaarten die het aanbod filteren
+- Uitgelichte overnachtingen met voorlopige affiliate-links (`/go/...`)
+- Inspiratieblok
+- Uitleg in 3 stappen
+- Newsletterblok (front-end only, geen echte verzending)
+- Footer met affiliate-disclaimer
+- Mobiele bottom-navigatie en PWA-basis (manifest + service worker)
 
 ## Bestanden
 
@@ -51,53 +41,33 @@ assets/icon.svg
 
 ## Lokaal openen
 
-Omdat dit een statische site is, kan de website direct vanuit een lokale server worden bekeken.
+Dit is een statische site zonder build-stap:
 
 ```bash
 python3 -m http.server 5173
 ```
 
-Open daarna:
+Open daarna `http://localhost:5173`.
 
-```text
-http://localhost:5173
-```
+## Nieuwe accommodaties toevoegen
 
-## Nieuwe plekken toevoegen
-
-Voeg nieuwe plekken toe in `app.js` in de `STAYS` array. Gebruik dezelfde structuur als de bestaande voorbeeldplekken.
-
-Belangrijke velden:
+Voeg plekken toe aan de `STAYS`-array in `app.js`. Velden per plek:
 
 - `slug`
 - `title`
-- `type`
-- `region`
+- `location`
+- `description`
 - `price`
-- `audience`
-- `vibe`
-- `tags`
-- `summary`
-- `wow`
-- `whyTikTok`
-- `cta`
-- `url`
+- `tag`
+- `theme`
+- `scene` (CSS-klasse voor de kaartvisual)
+- `href` (affiliate-link, voorlopig `/go/<slug>`)
 
-## Verdienmodel later
-
-Begin realistisch met een affiliate- of leadmodel:
-
-1. Curated pagina's met doorverwijzingen naar bestaande aanbieders.
-2. TikTok/Meta ads testen per categorie.
-3. Winnaars omzetten naar SEO-landingspagina's.
-4. Verhuurders laten betalen per lead, plaatsing of commissie.
-5. Pas later directe boekingen, accounts en beschikbaarheidskalender bouwen.
+Categorieën staan in `CATEGORIES`; de `query` van een categorie bepaalt waarop gefilterd wordt.
 
 ## Bewuste keuzes
 
-- Geen zware dependency-stack toegevoegd.
-- Geen backend/Supabase toegevoegd.
-- Geen echte affiliate-trackingcodes toegevoegd.
-- Geen echte verhuurderformulieren of betalingen toegevoegd.
-- Geen build-stap nodig voor deze MVP.
-- Focus op een snelle, testbare landingspagina die later kan doorgroeien.
+- Geen framework, geen npm, geen build-stap — pure HTML/CSS/JS.
+- Geen boekingssysteem, betaalflow, accounts, CMS of backend in deze fase.
+- Affiliate-links en newsletter zijn placeholders tot echte partners/tooling gekoppeld worden.
+- Bij elke contentwijziging: verhoog `CACHE_NAME` in `sw.js` zodat de PWA-cache ververst.

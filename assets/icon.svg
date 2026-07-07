@@ -1,23 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">SlaapUniek icoon</title>
-  <desc id="desc">Donkergroen app-icoon met een huisje, maan en SU letters.</desc>
+  <title id="title">BijzonderNachtje icoon</title>
+  <desc id="desc">Paars app-icoon met een roze maansikkel en sterren.</desc>
   <defs>
     <linearGradient id="bg" x1="80" x2="432" y1="64" y2="448" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#26391f" />
-      <stop offset="1" stop-color="#526c43" />
+      <stop stop-color="#2D174D" />
+      <stop offset="1" stop-color="#7D4CC6" />
     </linearGradient>
-    <linearGradient id="warm" x1="150" x2="380" y1="120" y2="410" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#f7c891" />
-      <stop offset="1" stop-color="#c8793a" />
+    <linearGradient id="moon" x1="180" x2="360" y1="130" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC5DE" />
+      <stop offset="1" stop-color="#FF6FAF" />
     </linearGradient>
   </defs>
   <rect width="512" height="512" rx="112" fill="url(#bg)" />
-  <circle cx="372" cy="126" r="52" fill="#f8e2ba" opacity="0.96" />
-  <path d="M100 348c36-55 82-82 138-82 48 0 86 25 116 25 31 0 54-16 68-48v129H100v-24Z" fill="#eaf1e4" opacity="0.9" />
-  <path d="M139 258 256 160l117 98v118H139V258Z" fill="url(#warm)" />
-  <path d="M119 263 256 147l137 116" fill="none" stroke="#fffdf8" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
-  <rect x="219" y="286" width="74" height="90" rx="12" fill="#26391f" opacity="0.88" />
-  <path d="M132 418h248" stroke="#fffdf8" stroke-width="20" stroke-linecap="round" opacity="0.92" />
-  <path d="M105 111c18 19 40 28 66 28-25 11-46 30-60 57-2-33-14-59-36-79 10 0 20-2 30-6Z" fill="#fffdf8" opacity="0.9" />
-  <path d="M151 132h44l37 104 37-104h44l-58 151h-46l-58-151Zm177 0h42v67l55-67h50l-63 73 68 78h-52l-58-70v70h-42V132Z" fill="#fffdf8" />
+  <path d="M312 92a170 170 0 1 0 104 292A186 186 0 0 1 312 92Z" fill="url(#moon)" />
+  <path d="M360 118l10 26 26 10-26 10-10 26-10-26-26-10 26-10 10-26Z" fill="#FAF7FB" />
+  <circle cx="128" cy="140" r="9" fill="#F3EDFB" opacity=".9" />
+  <circle cx="404" cy="228" r="7" fill="#F3EDFB" opacity=".75" />
+  <circle cx="160" cy="392" r="7" fill="#FFC5DE" opacity=".85" />
 </svg>

@@ -1,4 +1,4 @@
-const CACHE_NAME = "slaapuniek-v1";
+const CACHE_NAME = "bijzondernachtje-v1";
 const STATIC_ASSETS = [
   "./",
   "./index.html",
@@ -37,7 +37,10 @@ self.addEventListener("fetch", (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseClone));
           return networkResponse;
         })
-        .catch(() => caches.match("./index.html"));
+        .catch(() => {
+          if (event.request.mode === "navigate") return caches.match("./index.html");
+          return Response.error();
+        });
     })
   );
 });
