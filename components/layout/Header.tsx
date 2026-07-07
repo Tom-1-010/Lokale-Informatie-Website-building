@@ -18,6 +18,7 @@ export default function Header() {
           <Link href="#uitgelicht">Uitgelicht</Link>
           <Link href="#inspiratie">Inspiratie</Link>
           <Link href="#hoe-werkt-het">Hoe het werkt</Link>
+          <Link href="/contact">Contact</Link>
         </div>
         <Link className="button button-primary header-cta" href="#uitgelicht">Ontdek bijzondere plekken</Link>
       </nav>
