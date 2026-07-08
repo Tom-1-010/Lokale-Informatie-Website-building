@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Instagram, Facebook, Mail } from 'lucide-react';
+import { withBasePath } from '@/lib/utils';
 
 const footerColumns = [
   {
@@ -44,7 +45,7 @@ export default function Footer() {
           <div className="footer-brand-col">
             <Link className="brand footer-brand" href="/" aria-label="Terug naar boven">
               <Image
-                src="/logo.png"
+                src={withBasePath('/logo.png')}
                 alt="BijzonderNachtje"
                 width={625}
                 height={120}

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronDown, ArrowRight } from 'lucide-react';
 import { provinces } from '@/lib/data/provinces';
+import { withBasePath } from '@/lib/utils';
 
 export default function Header() {
   return (
@@ -9,7 +10,7 @@ export default function Header() {
       <nav className="topbar" aria-label="Hoofdnavigatie">
         <Link className="brand" href="/" aria-label="BijzonderNachtje startpagina">
           <Image
-            src="/logo.png"
+            src={withBasePath('/logo.png')}
             alt="BijzonderNachtje"
             width={625}
             height={120}
