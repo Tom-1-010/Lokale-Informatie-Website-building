@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Instagram, Facebook, Mail } from 'lucide-react';
 
 const footerColumns = [
@@ -42,7 +43,13 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand-col">
             <Link className="brand footer-brand" href="/" aria-label="Terug naar boven">
-              <span className="brand-name">bijz<span className="brand-moon" aria-hidden="true">o</span>nder<em>nachtje</em></span>
+              <Image
+                src="/logo.png"
+                alt="BijzonderNachtje"
+                width={625}
+                height={120}
+                className="brand-logo brand-logo-footer"
+              />
             </Link>
             <p className="footer-tagline">Jouw platform voor bijzondere overnachtingen</p>
           </div>

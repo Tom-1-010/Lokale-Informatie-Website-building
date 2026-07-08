@@ -88,23 +88,12 @@
     @apply inline-flex items-center gap-2.5;
   }
 
-  .brand-mark {
-    @apply w-10 h-10 grid place-items-center rounded-[14px];
-    background: linear-gradient(135deg, theme('colors.dark'), theme('colors.primary'));
-    box-shadow: 0 10px 26px rgba(90, 44, 160, 0.32);
+  .brand-logo {
+    @apply h-9 w-auto;
   }
 
-  .brand-name {
-    @apply font-extrabold text-xl tracking-tight text-dark;
-  }
-
-  .brand-name em {
-    font-style: normal;
-    color: theme('colors.accent');
-  }
-
-  .brand-moon {
-    @apply relative text-primary;
+  .brand-logo-footer {
+    @apply h-7;
   }
 
   .nav-links {
@@ -885,9 +874,6 @@
     @apply flex flex-col gap-2;
   }
 
-  .footer-brand .brand-name {
-    @apply text-lg;
-  }
 
   .footer-tagline {
     @apply text-sm text-muted;
@@ -1109,8 +1095,8 @@
       @apply min-h-[64px];
     }
 
-    .brand-name {
-      @apply text-lg;
+    .brand-logo {
+      @apply h-7;
     }
 
     .hero-visual, .newsletter, .search-panel {
